@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+bool palindrome(int n) {
+    int t = n, rev = 0;
+    while (t != 0) {
+        rev = rev * 10 + t % 10;
+        t /= 10;
+    }
+    return rev == n;
+}
+
+int main() {
+    for (int i = 1; i <= 1000; i++)
+        if (palindrome(i))
+            cout << i << " ";
+    return 0;
+}
