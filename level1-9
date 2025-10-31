@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int saniye;
+    cout << "Saniye daxil edin: ";
+    cin >> saniye;
+
+    int saat = saniye / 3600;
+    int qalan = saniye % 3600;
+    int deq = qalan / 60;
+    int san = qalan % 60;
+
+    cout << saat << " saat, " << deq << " deqiqe, " << san << " saniye" << endl;
+    return 0;
+}
