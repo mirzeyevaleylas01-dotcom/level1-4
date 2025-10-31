@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x;
+    cout << "Bir eded daxil edin: ";
+    cin >> x;
+
+    cout << "Kvadrati: " << x * x << endl;
+    cout << "Kubu: " << x * x * x << endl;
+    return 0;
+}
