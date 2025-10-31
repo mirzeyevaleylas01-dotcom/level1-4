@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, t, rev = 0;
+    cout << "Ededi daxil edin: ";
+    cin >> n;
+    t = n;
+    while (t != 0) {
+        rev = rev * 10 + t % 10;
+        t /= 10;
+    }
+    cout << "Tersi: " << rev << endl;
+    if (rev == n) cout << "Palindrome ededdir";
+    else cout << "Palindrome deyil";
+    return 0;
+}
