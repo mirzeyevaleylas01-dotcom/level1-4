@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Nece eded daxil edeceksiniz? ";
+    cin >> n;
+    int x, max, min;
+    double sum = 0;
+    for (int i = 1; i <= n; i++) {
+        cin >> x;
+        if (i == 1) max = min = x;
+        if (x > max) max = x;
+        if (x < min) min = x;
+        sum += x;
+    }
+    cout << "En boyuk: " << max << "\nEn kicik: " << min << "\nOrta: " << sum / n;
+    return 0;
+}
