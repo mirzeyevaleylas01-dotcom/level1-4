@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, temp;
+    cout << "Iki eded daxil edin: ";
+    cin >> a >> b;
+
+    c = a;
+    a = b;
+    b = c;
+
+    cout << "Yeni a: " << a << ", Yeni b: " << b << endl;
+    return 0;
+}
